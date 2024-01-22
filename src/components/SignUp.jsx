@@ -11,7 +11,7 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4000/register", { name, email, password })
+      .post("https://login-page-rwvb.onrender.com/register", { name, email, password })
       .then((result) => {
         console.log(result);
         alert("user registered successfully")
